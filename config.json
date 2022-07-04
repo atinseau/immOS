@@ -1,0 +1,13 @@
+{
+	"commands": [
+		{
+			"name": "Backend",
+			"command": "cat config.json",
+			"stderr": false
+		},
+		{
+			"name": "Frontend",
+			"command": "tail -f config.json"
+		}
+	]
+}
