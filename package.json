@@ -3,5 +3,8 @@
 	"workspaces": [
 		"backend",
 		"frontend"
-	]
+	],
+	"scripts": {
+		"dev": "sidecar --path=./sidecar.config.json"
+	}
 }

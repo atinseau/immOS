@@ -1,15 +1,13 @@
-import { Module } from '@nestjs/common';
-import { TodosModule } from './todos/todos.module';
+import { Get, Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-
+import { UsersModule } from './users/users.module';
 
 @Module({
 	imports: [
 		MongooseModule.forRoot('mongodb://localhost:27017', {
-			dbName: 'todos'
+			dbName: 'immOS'
 		}),
-		TodosModule,
-	],
-	controllers: []
+		UsersModule
+	]
 })
-export class AppModule { }
+export class AppModule {}
